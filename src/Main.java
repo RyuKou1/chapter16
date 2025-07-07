@@ -1,15 +1,24 @@
-//TIP コードを<b>実行</b>するには、<shortcut actionId="Run"/> を押すか
-// ガターの <icon src="AllIcons.Actions.Execute"/> アイコンをクリックします。
 public class Main {
     public static void main(String[] args) {
-        //TIP ハイライトされたテキストにキャレットがある状態で <shortcut actionId="ShowIntentionActions"/> を押すと
-        // IntelliJ IDEA によるその修正案を確認できます。
-        System.out.printf("Hello and welcome!");
+        // 1. 配列の宣言と初期化 (サイズは3で固定)
+        String[] names = new String[3];
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP <shortcut actionId="Debug"/> を押してコードのデバッグを開始します。<icon src="AllIcons.Debugger.Db_set_breakpoint"/> ブレークポイントを 1 つ設定しましたが、
-            // <shortcut actionId="ToggleLineBreakpoint"/> を押すといつでも他のブレークポイントを追加できます。
-            System.out.println("i = " + i);
-        }
+        // 2. 要素の追加 (添え字を指定して代入)
+        names[0] = "たなか";
+        names[1] = "すずき";
+        names[2] = "さいとう";
+
+        // 3. 要素の取得 (添え字を指定して取得)
+        String name1 = names[0];
+        String name2 = names[1];
+        String name3 = names[2];
+        System.out.println("配列0: " + names[0]);
+        System.out.println("配列1: " + names[1]);
+        System.out.println("配列2: " + names[2]);
+
+        // 4. 要素数の確認 (.lengthフィールドを使用)
+        int count = names.length;
+        System.out.println("配列の要素数: " + count);
+
     }
 }
